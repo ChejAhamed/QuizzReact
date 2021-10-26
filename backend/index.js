@@ -15,11 +15,11 @@ server.use(cors());
 server.use(morgan('dev'));
 server.use(express.json());
 
-const quizRouter = require('./src/routes/quizRoutes');
+const quizRouter = require('./src/routers/quizRoutes');
 
 server.use('/api/quiz', quizRouter);
 
-const userRouter = require('./src/routes/userRoutes');
+const userRouter = require('./src/routers/userRouter');
 
 server.use('/api/user', userRouter);
 
